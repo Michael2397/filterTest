@@ -18,6 +18,7 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String name = request.getParameter("userName");
+		System.out.println("执行servlet");
 		System.out.println("用户"+name);
 	}
 

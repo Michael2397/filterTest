@@ -26,7 +26,7 @@ public class EncodingFilter implements Filter {
 	 * @see 过滤器业务处理方法：处理的公用业务逻辑操作
 	 */
 	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
-		
+		System.out.println("执行filter");
 		// 转型
 		final HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) res;
